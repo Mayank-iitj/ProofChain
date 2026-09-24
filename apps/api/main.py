@@ -21,6 +21,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    return {
+        "status": "online",
+        "service": "ProofChain API",
+        "docs_url": "/docs",
+        "version": "1.0.0"
+    }
+
 class VerificationRequest(BaseModel):
     text: str
     mode: str = "web"
