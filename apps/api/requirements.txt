@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+openai
+supabase
+httpx
+redis
+sqlalchemy
+pgvector
