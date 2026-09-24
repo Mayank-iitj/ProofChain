@@ -9,14 +9,14 @@ const PillNav = ({
   logo,
   logoAlt = 'Logo',
   items,
-  activeHref = undefined,
+  activeHref = '',
   className = '',
   ease = 'power3.easeOut',
   baseColor = '#fff',
   pillColor = '#120F17',
   hoveredPillTextColor = '#120F17',
-  pillTextColor = undefined,
-  onMobileMenuClick = undefined,
+  pillTextColor = '',
+  onMobileMenuClick = () => {},
   initialLoadAnimation = true
 }) => {
   const resolvedPillTextColor = pillTextColor ?? baseColor;
